@@ -1,3 +1,7 @@
-export const Button = ({ title }: { title: string }) => (
-  <button>{title}</button>
-);
+export const Button = ({
+  title,
+  onClick,
+}: {
+  title: string;
+  onClick: () => void;
+}) => <button onClick={onClick}>{title}</button>;
