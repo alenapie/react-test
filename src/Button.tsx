@@ -1,1 +1,3 @@
-export const Button = () => <button>Click me</button>;
+export const Button = ({ title }: { title: string }) => (
+  <button>{title}</button>
+);
